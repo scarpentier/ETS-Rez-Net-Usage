@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="RezNetUsage.Web.Azure.ccproj" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="RezNetUsage.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=spacebar.blob.core.windows.net;AccountKey=BeZuCEEo+Jfh6iuKqZ1uKuObgq4vTfagasdN44MRO3aAc4hzag8Ml77kmq3LFdmGTb7nks1MUaH+yzGGWL5w5g==" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>

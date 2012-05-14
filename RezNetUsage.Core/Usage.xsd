@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Usage" targetNamespace="http://tempuri.org/DataSet1.xsd" xmlns:mstns="http://tempuri.org/DataSet1.xsd" xmlns="http://tempuri.org/DataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Usage" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_DataSetName="Usage" msprop:Generator_UserDSName="Usage">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DailyUsage" msprop:Generator_UserTableName="DailyUsage" msprop:Generator_RowEvArgName="DailyUsageRowChangeEvent" msprop:Generator_TableVarName="tableDailyUsage" msprop:Generator_TablePropName="DailyUsage" msprop:Generator_RowDeletingName="DailyUsageRowDeleting" msprop:Generator_RowChangingName="DailyUsageRowChanging" msprop:Generator_RowDeletedName="DailyUsageRowDeleted" msprop:Generator_TableClassName="DailyUsageTable" msprop:Generator_RowChangedName="DailyUsageRowChanged" msprop:Generator_RowEvHandlerName="DailyUsageRowChangeEventHandler" msprop:Generator_RowClassName="DailyUsageRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Phase" msprop:Generator_ColumnVarNameInTable="columnPhase" msprop:Generator_ColumnPropNameInRow="Phase" msprop:Generator_ColumnPropNameInTable="PhaseColumn" msprop:Generator_UserColumnName="Phase" type="xs:string" minOccurs="0" />
+              <xs:element name="Appart" msprop:Generator_ColumnVarNameInTable="columnAppart" msprop:Generator_ColumnPropNameInRow="Appart" msprop:Generator_ColumnPropNameInTable="AppartColumn" msprop:Generator_UserColumnName="Appart" type="xs:string" minOccurs="0" />
+              <xs:element name="Port" msprop:Generator_ColumnVarNameInTable="columnPort" msprop:Generator_ColumnPropNameInRow="Port" msprop:Generator_ColumnPropNameInTable="PortColumn" msprop:Generator_UserColumnName="Port" type="xs:string" minOccurs="0" />
+              <xs:element name="Day" msprop:Generator_ColumnVarNameInTable="columnDay" msprop:Generator_ColumnPropNameInRow="Day" msprop:Generator_ColumnPropNameInTable="DayColumn" msprop:Generator_UserColumnName="Day" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="Download" msprop:Generator_ColumnVarNameInTable="columnDownload" msprop:Generator_ColumnPropNameInRow="Download" msprop:Generator_ColumnPropNameInTable="DownloadColumn" msprop:Generator_UserColumnName="Download" type="xs:double" minOccurs="0" />
+              <xs:element name="Upload" msprop:Generator_ColumnVarNameInTable="columnUpload" msprop:Generator_ColumnPropNameInRow="Upload" msprop:Generator_ColumnPropNameInTable="UploadColumn" msprop:Generator_UserColumnName="Upload" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

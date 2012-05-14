@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="http://serious.spacebar.ca/msdeployagentservice" deleteExistingFiles="False" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="dev/RezNetUsage" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="False" msdeployMarkAsApp="True" profileName="SERIOUS" publishMethod="MSDeploy" replaceMatchingFiles="True" userName="Administrator" savePWD="True" userPWD="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAvMidBXbd7kyd5zAYZWPSFQAAAAACAAAAAAAQZgAAAAEAACAAAACb9zRpdvBvhhRnZIBal2xxSRCXAviNqi7lVGv1l87WMQAAAAAOgAAAAAIAACAAAAA2CRpDD/8SHQKMDcA6MhZsu/sIHze4lu8BpLn/YpoIByAAAACwMOIeCo0eSCYadd068m1KUX8SShKoGbcs2MjFzit2xEAAAADxmVbhxVXmWErQJZkrYxId2bntmGgWSzRKe8VmHouFDjhnH/T9cMxONT02L3PXYIbGZsq08Sr7aerKIKn7uaTe" SelectedForPublish="True" />
+</publishData>

@@ -1,0 +1,11 @@
+teintes de bleu
+#3782ee
+#2961aa
+#1a3e6b
+#0a192b
+
+mauve à bleu ciel
+#3782ee
+#3847ED
+#37BBE8
+#6237E5

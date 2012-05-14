@@ -1,0 +1,91 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.Core", "RezNetUsage.Core\RezNetUsage.Core.csproj", "{F6848D3F-1427-4EBC-A788-58CE7B93F054}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.Web", "RezNetUsage.Web\RezNetUsage.Web.csproj", "{64FB8787-0BC2-4076-B861-DE02C752AE46}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.DataFetcher", "DataFetcher\RezNetUsage.DataFetcher.csproj", "{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "RezNetUsage.Web.Azure", "RezNetUsage.Web.Azure\RezNetUsage.Web.Azure.ccproj", "{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 5
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs32
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = DataFetcher\\RezNetUsage.DataFetcher.csproj
+		SccProjectName1 = DataFetcher
+		SccLocalPath1 = DataFetcher
+		SccProjectUniqueName2 = RezNetUsage.Core\\RezNetUsage.Core.csproj
+		SccProjectName2 = RezNetUsage.Core
+		SccLocalPath2 = RezNetUsage.Core
+		SccProjectUniqueName3 = RezNetUsage.Web\\RezNetUsage.Web.csproj
+		SccProjectName3 = RezNetUsage.Web
+		SccLocalPath3 = RezNetUsage.Web
+		SccProjectUniqueName4 = RezNetUsage.Web.Azure\\RezNetUsage.Web.Azure.ccproj
+		SccProjectName4 = RezNetUsage.Web.Azure
+		SccLocalPath4 = RezNetUsage.Web.Azure
+	EndGlobalSection
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = RezNetUsage.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{F6848D3F-1427-4EBC-A788-58CE7B93F054}.Release|x86.ActiveCfg = Release|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Release|Any CPU.Build.0 = Release|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{64FB8787-0BC2-4076-B861-DE02C752AE46}.Release|x86.ActiveCfg = Release|Any CPU
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Debug|x86.ActiveCfg = Debug|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Debug|x86.Build.0 = Debug|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|Any CPU.ActiveCfg = Release|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|Mixed Platforms.Build.0 = Release|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|x86.ActiveCfg = Release|x86
+		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|x86.Build.0 = Release|x86
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+EndGlobal

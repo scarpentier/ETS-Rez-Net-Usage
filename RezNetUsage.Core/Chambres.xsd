@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Chambres" targetNamespace="http://tempuri.org/Chambres.xsd" xmlns:mstns="http://tempuri.org/Chambres.xsd" xmlns="http://tempuri.org/Chambres.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Chambres" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:Generator_UserDSName="Chambres" msprop:Generator_DataSetName="Chambres">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Chambres" msprop:Generator_UserTableName="Chambres" msprop:Generator_RowDeletedName="ChambresRowDeleted" msprop:Generator_RowChangedName="ChambresRowChanged" msprop:Generator_RowClassName="ChambresRow" msprop:Generator_RowChangingName="ChambresRowChanging" msprop:Generator_RowEvArgName="ChambresRowChangeEvent" msprop:Generator_RowEvHandlerName="ChambresRowChangeEventHandler" msprop:Generator_TableClassName="ChambresDataTable" msprop:Generator_TableVarName="tableChambres" msprop:Generator_RowDeletingName="ChambresRowDeleting" msprop:Generator_TablePropName="_Chambres">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Phase" msprop:Generator_UserColumnName="Phase" msprop:Generator_ColumnPropNameInRow="Phase" msprop:Generator_ColumnVarNameInTable="columnPhase" msprop:Generator_ColumnPropNameInTable="PhaseColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Appartement" msprop:Generator_UserColumnName="Appartement" msprop:Generator_ColumnPropNameInRow="Appartement" msprop:Generator_ColumnVarNameInTable="columnAppartement" msprop:Generator_ColumnPropNameInTable="AppartementColumn" type="xs:string" minOccurs="0" />
+              <xs:element name="Maximum" msprop:Generator_UserColumnName="Maximum" msprop:Generator_ColumnPropNameInRow="Maximum" msprop:Generator_ColumnVarNameInTable="columnMaximum" msprop:Generator_ColumnPropNameInTable="MaximumColumn" type="xs:double" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
