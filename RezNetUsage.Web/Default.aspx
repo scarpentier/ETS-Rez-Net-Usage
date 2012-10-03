@@ -149,7 +149,7 @@
         <h3>C'est quoi ça?</h3>
         Un outil pour vérifier la consommation d'internet dans les résidences qui fail moins que celle fournie par Cooptel.
         <h3>C'est fait par qui?</h3>
-        <a href="http://spacebar.ca">Simon Carpentier</a>, un étudiant qui pensait pouvoir se faire créditer son cours d'interface avec ça.
+        <a href="http://spacebar.ca">Simon Carpentier</a>, un enthousiaste des Internets qui mène une vie normale malgré son bacc. en TI.
         <h3>Qu'est-ce qui se passe si je dépasse ma limite?</h3>
         Cooptel coupe le port de toutes les chambres de l'appart qui dépasse sa limite. C'est un script qui roule sur les switchs à toutes les heures.
         <h3>J'ai dépassé ma limite et je n'ai plus d'internet :(</h3>
