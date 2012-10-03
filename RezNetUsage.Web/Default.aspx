@@ -18,6 +18,7 @@
                 <asp:ListItem>1</asp:ListItem>
                 <asp:ListItem>2</asp:ListItem>
                 <asp:ListItem>3</asp:ListItem>
+                <asp:ListItem>4</asp:ListItem>
             </asp:DropDownList>
             &nbsp;Appart: 
             <asp:TextBox ID="txtAppart" runat="server" Columns="4" MaxLength="4" 
@@ -142,8 +143,8 @@
         <li>
             <asp:HyperLink ID="hlMonthly" NavigateUrl="~/Monthly.aspx" runat="server">Statistiques du mois {0}</asp:HyperLink></li>
       </ul>-->
-            <h2>Attention!</h2>
-            Je termine bientôt l'ETS et je met à la disposition des LOGeux motivés le <a href="http://etsreznetusage.codeplex.com">code source</a> de ce site. Celui-ci restera disponible aussi longtemps que possible après mon départ mais il n'y aura plus de développement.
+            <h2>Message</h2>
+            J'ai terminé l'ETS en avril 2012 et remet cet outil entre les mains des étudiants. Le <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">code source</a> est disponible et je continuerai de l'héberger jusqu'au <b>31 mai 2013</b>.
       <h2>FAQ</h2>
         <h3>C'est quoi ça?</h3>
         Un outil pour vérifier la consommation d'internet dans les résidences qui fail moins que celle fournie par Cooptel.
@@ -159,7 +160,8 @@
      <h2>Meta</h2>
      <ul>
      <li><a href="http://www.facebook.com/note.php?note_id=121994317833046">Changelog</a></li>
-     <li><a href="http://www.facebook.com/note.php?note_id=121993617833116">Roadmap</a></li></ul>
+     <li><a href="http://www.facebook.com/note.php?note_id=121993617833116">Roadmap</a></li>
+     <li><a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">Code source</a></li></ul>
     </td>
     </tr></table>
     

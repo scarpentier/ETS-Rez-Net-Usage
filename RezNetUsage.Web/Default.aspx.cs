@@ -139,13 +139,13 @@
             }
 
             // Si c'est le début du mois, on a pte pas assé de data pour afficher des choses
-            const int joursavantprevision = 3;
+            const int JoursAvantPrevision = 3;
 
-            if (_mois == DateTime.Now.Month && DateTime.Now.Day <= joursavantprevision) // Pas de prévisions avant 3 jours
+            if (_mois == DateTime.Now.Month && DateTime.Now.Day <= JoursAvantPrevision) // Pas de prévisions avant 3 jours
             {
                 //lblPrevisionUsage.Visible = false;
                 lblPrevisionUsage.Text = "Il n'y a <b>pas assez de données</b> recueillies pour faire une prévision.";
-                lblPrevisionRecommandation.Text = String.Format("Revenez le {0} {1}.", joursavantprevision + 1, DateTime.Now.ToString("MMMM"));
+                lblPrevisionRecommandation.Text = String.Format("Revenez le {0} {1}.", JoursAvantPrevision + 1, DateTime.Now.ToString("MMMM"));
             }
 
             // Est-ce que l'utilisateur a déjà dépassé sa limite?
@@ -154,7 +154,6 @@
                 lblPrevisionRecommandation.Text =
                     "Vous avez <b>déjà dépassé</b> votre limite. Si vous avez toujours de l'internet, votre port sera coupé d'ici une heure. <b>Contactez le service à la clientèle</b> de Cooptel si vous voulez réactiver le service.";
                 lblPrevisionUsage.Visible = false;
-                return;
             }
         }
 
@@ -285,7 +284,7 @@
             if (int.TryParse(phase, out phaseout) && int.TryParse(appart, out appartout))
             {
                 // Est-ce que phase / appart existe?
-                if (AppartHelper.IsAppartExist(phaseout, appartout))
+                if (AppartHelper.IsAppartExist(phaseout, appartout) || phaseout == 4) // HACK: Permettre la nouvelle phase 4 sans savoir quelles sont les apparts possibles. Ça se peut que ça brise des choses. Oh well.
                 {
                     // L'appart existe, tout est OK
                     _phase = phaseout;

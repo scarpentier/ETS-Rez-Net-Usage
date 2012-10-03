@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.Core", "RezNetUsage.Core\RezNetUsage.Core.csproj", "{F6848D3F-1427-4EBC-A788-58CE7B93F054}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.Web", "RezNetUsage.Web\RezNetUsage.Web.csproj", "{64FB8787-0BC2-4076-B861-DE02C752AE46}"
@@ -10,24 +10,6 @@ EndProject
 Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "RezNetUsage.Web.Azure", "RezNetUsage.Web.Azure\RezNetUsage.Web.Azure.ccproj", "{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}"
 EndProject
 Global
-	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 5
-		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs32
-		SccLocalPath0 = .
-		SccProjectUniqueName1 = DataFetcher\\RezNetUsage.DataFetcher.csproj
-		SccProjectName1 = DataFetcher
-		SccLocalPath1 = DataFetcher
-		SccProjectUniqueName2 = RezNetUsage.Core\\RezNetUsage.Core.csproj
-		SccProjectName2 = RezNetUsage.Core
-		SccLocalPath2 = RezNetUsage.Core
-		SccProjectUniqueName3 = RezNetUsage.Web\\RezNetUsage.Web.csproj
-		SccProjectName3 = RezNetUsage.Web
-		SccLocalPath3 = RezNetUsage.Web
-		SccProjectUniqueName4 = RezNetUsage.Web.Azure\\RezNetUsage.Web.Azure.ccproj
-		SccProjectName4 = RezNetUsage.Web.Azure
-		SccLocalPath4 = RezNetUsage.Web.Azure
-	EndGlobalSection
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = RezNetUsage.vsmdi
 	EndGlobalSection

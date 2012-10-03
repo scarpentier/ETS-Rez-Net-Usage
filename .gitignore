@@ -1,3 +1,6 @@
-ServiceConfiguration.Cloud.cscfg
 bin
 obj
+backup
+_ReSharper.RezNetUsage
+_UpgradeReport_Files
+csx

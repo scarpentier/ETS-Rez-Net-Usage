@@ -25,7 +25,7 @@
                 </asp:ContentPlaceHolder>
             </div>
             <div class="footer">
-        © 2010 Simon Carpentier @ <a href="http://spacebar.ca">http://spacebar.ca</a>. Tous droits réservés. Merci à <a href="http://www.chris03.com">Chris</a> et à la puissance d'<a href="http://www.asp.net">ASP.NET</a>
+        © 2012 Simon Carpentier @ <a href="http://spacebar.ca">http://spacebar.ca</a>. Tous droits réservés. Merci à <a href="http://www.chris03.com">Chris</a> et à la puissance d'<a href="http://www.asp.net">ASP.NET</a>
         </div>
         </div>
     </div>
