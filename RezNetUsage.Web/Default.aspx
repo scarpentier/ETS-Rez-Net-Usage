@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RezNetUsage.Web.Default1" %>
 <%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
     Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
-<%@ Register assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" namespace="System.Web.UI.DataVisualization.Charting" tagprefix="asp" %>
 <%@ Register src="Usercontrols/ErrorInvalidAppart.ascx" tagname="ErrorInvalidAppart" tagprefix="uc1" %>
 <%@ OutputCache Duration="30" VaryByParam="phase; appart; mois" %>
 
@@ -144,7 +143,7 @@
             <asp:HyperLink ID="hlMonthly" NavigateUrl="~/Monthly.aspx" runat="server">Statistiques du mois {0}</asp:HyperLink></li>
       </ul>-->
             <h2>Message</h2>
-            J'ai terminé l'ETS en avril 2012 et remet cet outil entre les mains des étudiants. Le <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">code source</a> est disponible et je continuerai de l'héberger jusqu'au <b>31 mai 2013</b>.
+            J'ai terminé l'ETS en avril 2012 et remet cet outil entre les mains des étudiants. Le <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">code source</a> est disponible et je continuerai de l'héberger jusqu'au <b>30 mai 2013</b>.
       <h2>FAQ</h2>
         <h3>C'est quoi ça?</h3>
         Un outil pour vérifier la consommation d'internet dans les résidences qui fail moins que celle fournie par Cooptel.

@@ -18,5 +18,6 @@
     <PublishProfile>Cloud</PublishProfile>
     <TimestampLabel>True</TimestampLabel>
     <DeploymentPromptBeforeDeleting>False</DeploymentPromptBeforeDeleting>
+    <ActivePublishProfile>RezNetUsageProduction</ActivePublishProfile>
   </PropertyGroup>
 </Project>
