@@ -87,13 +87,13 @@
                 <h2>Prévisions</h2>
                 <table>
                 <tr>
-                <td width="450" valign="top">
+                <td valign="top"> <%--Was 450 px--%>
                 <asp:Label ID="lblPrevisionRatio" runat="server" Text="Label">Vous consommez <b>{0}%</b> de votre capacité journalière maximale moyenne. </asp:Label>
                 <asp:Label ID="lblPrevisionUsage" runat="server" Text="Label">À ce rythme, vous consommerez <b>{0} GB {1}</b> de votre limite. </asp:Label>
                 <asp:Label ID="lblPrevisionRecommandation" runat="server" Text="Label"><b>{0}</b> votre consommation ou {1}.</asp:Label>
                 </td>
-                <td valign="top" align="center" width="280">
-                <rsweb:ReportViewer ID="ReportForecastRatio" runat="server" 
+                <%--<td valign="top" align="center" width="280">
+                <rsweb:ReportViewer ID="ReportForecastRatio" runat="server" Visible="False"
                          Font-Names="Verdana" Font-Size="8pt" Height="80px" Width="250"
                          InteractiveDeviceInfos="(Collection)" ShowBackButton="False" 
                          ShowDocumentMapButton="False" ShowExportControls="False" 
@@ -103,7 +103,7 @@
                          WaitMessageFont-Size="14pt" SizeToReportContent="True" KeepSessionAlive="False" AsyncRendering="False" InteractivityPostBackMode="AlwaysAsynchronous">
                          <LocalReport ReportPath="Reports\ForecastRatio.rdlc">
                          </LocalReport>
-                     </rsweb:ReportViewer></td>
+                     </rsweb:ReportViewer></td>--%>
                 </tr>
                 </table>
                      
