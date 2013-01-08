@@ -111,13 +111,13 @@ namespace RezNetUsage.Web
                 return;
             }
 
-            //this.ReportForecastRatio.LocalReport.DataSources.Clear();
-            this.ReportForecastRatio.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", new DataTable()));
+            ////this.ReportForecastRatio.LocalReport.DataSources.Clear();
+            //this.ReportForecastRatio.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", new DataTable()));
 
-            //var paramList = new List<ReportParameter> { new ReportParameter("Ratio", _usage.UsageRateRatio.ToString(), false) };
+            ////var paramList = new List<ReportParameter> { new ReportParameter("Ratio", _usage.UsageRateRatio.ToString(), false) };
 
-            this.ReportForecastRatio.LocalReport.SetParameters(new ReportParameter("Ratio", _usage.UsageRateRatio.ToString())); ;
-            //this.ReportForecastRatio.LocalReport.Refresh();
+            //this.ReportForecastRatio.LocalReport.SetParameters(new ReportParameter("Ratio", _usage.UsageRateRatio.ToString())); ;
+            ////this.ReportForecastRatio.LocalReport.Refresh();
 
             bool depasse = (_usage.Maximum < _usage.ForecastUsage);
 
