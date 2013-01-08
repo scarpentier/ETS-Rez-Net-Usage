@@ -1273,12 +1273,17 @@
   <Chambres>
     <Phase>3</Phase>
     <Appartement>9124</Appartement>
-    <Maximum>61440</Maximum>
+    <Maximum>102400</Maximum>
   </Chambres>
   <Chambres>
     <Phase>3</Phase>
     <Appartement>9126</Appartement>
-    <Maximum>61440</Maximum>
+    <Maximum>102400</Maximum>
+  </Chambres>
+  <Chambres>
+    <Phase>3</Phase>
+    <Appartement>9128</Appartement>
+    <Maximum>102400</Maximum>
   </Chambres>
   <Chambres>
     <Phase>3</Phase>
