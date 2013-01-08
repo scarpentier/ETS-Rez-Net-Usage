@@ -7,8 +7,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.Web", "RezNetUs
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RezNetUsage.DataFetcher", "DataFetcher\RezNetUsage.DataFetcher.csproj", "{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}"
 EndProject
-Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "RezNetUsage.Web.Azure", "RezNetUsage.Web.Azure\RezNetUsage.Web.Azure.ccproj", "{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}"
-EndProject
 Global
 	GlobalSection(TestCaseManagementSettings) = postSolution
 		CategoryFile = RezNetUsage.vsmdi
@@ -52,16 +50,6 @@ Global
 		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|Mixed Platforms.Build.0 = Release|x86
 		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|x86.ActiveCfg = Release|x86
 		{E1605538-6A9F-4B2B-8CC6-F5CA664FF1DC}.Release|x86.Build.0 = Release|x86
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|Mixed Platforms.Build.0 = Release|Any CPU
-		{9AA344BF-2F4C-459B-8216-00CBC0C4EB0E}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,6 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Default.Master" AutoEventWireup="true" CodeBehind="Default.aspx.cs" Inherits="RezNetUsage.Web.Default1" %>
-<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a"
-    Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
+<%@ Register Assembly="Microsoft.ReportViewer.WebForms, Version=11.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91" Namespace="Microsoft.Reporting.WebForms" TagPrefix="rsweb" %>
 <%@ Register src="Usercontrols/ErrorInvalidAppart.ascx" tagname="ErrorInvalidAppart" tagprefix="uc1" %>
 <%@ OutputCache Duration="30" VaryByParam="phase; appart; mois" %>
 
@@ -59,7 +58,7 @@
     ShowBackButton="False" ShowExportControls="False" ShowFindControls="False" 
     ShowPageNavigationControls="False" ShowPrintButton="False" 
     ShowRefreshButton="False" ShowZoomControl="False" Height="200px" Width="350px" ShowToolBar="False" 
-                            SizeToReportContent="True">
+                            SizeToReportContent="True" KeepSessionAlive="True" InteractivityPostBackMode="AlwaysAsynchronous" AsyncRendering="False">
         <LocalReport ReportPath="Reports\SummaryPie.rdlc">
         </LocalReport>
     </rsweb:ReportViewer>
@@ -101,7 +100,7 @@
                          ShowFindControls="False" ShowPageNavigationControls="False" 
                          ShowPrintButton="False" ShowPromptAreaButton="False" ShowRefreshButton="False" 
                          ShowToolBar="False" ShowZoomControl="False" WaitMessageFont-Names="Verdana" 
-                         WaitMessageFont-Size="14pt" SizeToReportContent="True">
+                         WaitMessageFont-Size="14pt" SizeToReportContent="True" KeepSessionAlive="False" AsyncRendering="False" InteractivityPostBackMode="AlwaysAsynchronous">
                          <LocalReport ReportPath="Reports\ForecastRatio.rdlc">
                          </LocalReport>
                      </rsweb:ReportViewer></td>
@@ -117,7 +116,7 @@
         ShowBackButton="False" ShowExportControls="False" ShowFindControls="False" 
         ShowPageNavigationControls="False" ShowPrintButton="False" 
         ShowRefreshButton="False" ShowZoomControl="False" Width="700px" 
-            ShowToolBar="False" SizeToReportContent="True">
+            ShowToolBar="False" SizeToReportContent="True" InteractivityPostBackMode="AlwaysAsynchronous" KeepSessionAlive="True" AsyncRendering="False">
                         <LocalReport ReportPath="Reports\Users.rdlc">
                         </LocalReport>
     </rsweb:ReportViewer>
@@ -128,7 +127,7 @@
     ShowPageNavigationControls="False" ShowPrintButton="False" 
     ShowRefreshButton="False" ShowZoomControl="False" 
     WaitMessageFont-Names="Verdana" WaitMessageFont-Size="14pt" Width="700px" 
-            ShowToolBar="False" SizeToReportContent="True">
+            ShowToolBar="False" SizeToReportContent="True" KeepSessionAlive="True" InteractivityPostBackMode="AlwaysAsynchronous" AsyncRendering="False">
         <LocalReport ReportPath="Reports\ThisMonth.rdlc">
         </LocalReport>
     </rsweb:ReportViewer>
@@ -167,4 +166,7 @@
                     <div class="footer">
         Source: 
     <asp:HyperLink ID="hlSource" runat="server"></asp:HyperLink></div>
+    <!--
+    <asp:Label runat="server" ID="lblDebug"></asp:Label>
+        -->
 </asp:Content>

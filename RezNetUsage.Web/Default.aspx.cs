@@ -1,4 +1,6 @@
-﻿namespace RezNetUsage.Web
+﻿using System.Data;
+
+namespace RezNetUsage.Web
 {
     using System.Globalization;
     using System;
@@ -36,10 +38,7 @@
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (IsPostBack)
-            {
-                return;
-            }
+            if (IsPostBack) return;
 
             bool isok = ParseAppartParameters(
                 this.Request.QueryString["phase"], this.Request.QueryString["appart"], this.Request.QueryString["mois"]);
@@ -89,6 +88,7 @@
                 } else
                 {
                     lblPhaseAppartMois.Text = "Oops! Quelque chose d'étrange c'est produit: " + ex.Message;
+                    lblDebug.Text = ex.ToString();
                 }
 
                 lblPhaseAppartMois.ForeColor = System.Drawing.Color.Red;
@@ -111,14 +111,13 @@
                 return;
             }
 
-            this.ReportForecastRatio.LocalReport.DataSources.Clear();
-            this.ReportForecastRatio.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", _usage.Tables[0]));
+            //this.ReportForecastRatio.LocalReport.DataSources.Clear();
+            this.ReportForecastRatio.LocalReport.DataSources.Add(new ReportDataSource("DataSet1", new DataTable()));
 
-            var paramList = new List<ReportParameter>
-                                {new ReportParameter("Ratio", _usage.UsageRateRatio.ToString(), false)};
+            //var paramList = new List<ReportParameter> { new ReportParameter("Ratio", _usage.UsageRateRatio.ToString(), false) };
 
-            this.ReportForecastRatio.LocalReport.SetParameters(paramList);
-            this.ReportForecastRatio.LocalReport.Refresh();
+            this.ReportForecastRatio.LocalReport.SetParameters(new ReportParameter("Ratio", _usage.UsageRateRatio.ToString())); ;
+            //this.ReportForecastRatio.LocalReport.Refresh();
 
             bool depasse = (_usage.Maximum < _usage.ForecastUsage);
 
