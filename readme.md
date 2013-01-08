@@ -11,9 +11,6 @@ The data is used for monthly statistics and history. See [Monthly.aspx](https://
 Contains the storage objects used by the UI and the logic to fetch the usage information from the Cooptel website.
 The magic happens in the [UsageFactory](https://github.com/scarpentier/ETS-Rez-Net-Usage/blob/master/RezNetUsage.Core/UsageFactory.cs) class.
 
-### RezNetUsage.Web.Azure
-Simple Windows Azure Web role. Nothing fancy here. Might be deprecated in the future if the solution is deployed to a Web Site role instead.
-
 ### RezNetUsage.Web
 Actual web site files
 
