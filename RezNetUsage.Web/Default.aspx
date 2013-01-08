@@ -141,8 +141,8 @@
         <li>
             <asp:HyperLink ID="hlMonthly" NavigateUrl="~/Monthly.aspx" runat="server">Statistiques du mois {0}</asp:HyperLink></li>
       </ul>-->
-            <h2>Message</h2>
-            J'ai terminé l'ETS en avril 2012 et remet cet outil entre les mains des étudiants. Le <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">code source</a> est disponible et je continuerai de l'héberger jusqu'au <b>30 mai 2013</b>.
+            <%--<h2>Message</h2>
+            J'ai terminé l'ETS en avril 2012 et remet cet outil entre les mains des étudiants. Le <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage">code source</a> est disponible et je continuerai de l'héberger jusqu'au <b>30 mai 2013</b>.--%>
       <h2>FAQ</h2>
         <h3>C'est quoi ça?</h3>
         Un outil pour vérifier la consommation d'internet dans les résidences qui fail moins que celle fournie par Cooptel.
@@ -169,4 +169,5 @@
     <!--
     <asp:Label runat="server" ID="lblDebug"></asp:Label>
         -->
+    <a href="https://github.com/scarpentier/ETS-Rez-Net-Usage"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub" /></a>
 </asp:Content>
