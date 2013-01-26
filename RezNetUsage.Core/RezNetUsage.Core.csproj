@@ -72,7 +72,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Chambres.xsd</DependentUpon>
     </Compile>
-    <Compile Include="Net.cs" />
+    <Compile Include="NetHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Usage.cs">
       <DependentUpon>Usage.xsd</DependentUpon>

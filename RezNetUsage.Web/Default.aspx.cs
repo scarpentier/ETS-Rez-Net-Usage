@@ -60,7 +60,7 @@ namespace RezNetUsage.Web
             try {
 
                 // Aller chercher l'utilisation
-                _usage = UsageFactory.GetUsage(_phase, _appart, _mois);
+                _usage = new Usage().GetUsage(_phase, _appart, _mois);
 
                 // Mettre les paramètres dans les contrôles
                 lblPhaseAppartMois.Text = String.Format(lblPhaseAppartMois.Text, _phase, _appart, Mois[_mois - 1]);

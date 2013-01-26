@@ -1,14 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.IO;
 using System.Linq;
+using System.Reflection;
 using System.Text;
+using System.Xml.Linq;
 
 namespace RezNetUsage.Core
 {
-    using System.Data;
-    using System.IO;
-    using System.Reflection;
-
     public static class AppartHelper
     {
         public static bool IsAppartExist(int phase, int appart)
@@ -21,8 +21,8 @@ namespace RezNetUsage.Core
                 DataRow[] foundrows = chambres.Tables[0].Select("Phase = " + phase + " AND Appartement = " + appart);
 
                 // Retourner le résultat
-                return (foundrows.Count() == 1);
-            } catch (Exception ex)
+                return (foundrows.Any());
+            } catch
             {
                 return false;
             }
@@ -47,6 +47,7 @@ namespace RezNetUsage.Core
             var chambres = new Chambres();
 
             // Loader le data dans le dataset
+            // TODO: Trouver un meilleur plan que d'utiliser la réflexion pour aller chercher un XML à chaque fois que quelqu'un demande une chambre!
             var _assembly = Assembly.GetExecutingAssembly();
             chambres.ReadXml(new StreamReader(_assembly.GetManifestResourceStream("RezNetUsage.Core.Chambres.xml")));
 
@@ -55,7 +56,7 @@ namespace RezNetUsage.Core
 
         public static Usage GetUsage(Chambres chambres, int mois)
         {
-            Usage usage = new Usage();
+            var usage = new Usage();
 
             foreach (DataRow row in chambres.Tables[0].Rows)
             {
@@ -64,8 +65,8 @@ namespace RezNetUsage.Core
                     (string)row["Phase"]);
                 try
                 {
-                    usage = UsageFactory.GetUsage(
-                        usage, int.Parse((string)row["Phase"]), int.Parse((string)row["Appartement"]), mois);
+                    usage = new Usage().GetUsage(
+                        int.Parse((string)row["Phase"]), int.Parse((string)row["Appartement"]), mois);
                 }
                 catch (Exception ex)
                 {
@@ -74,11 +75,6 @@ namespace RezNetUsage.Core
             }
 
             return usage;
-        }
-
-        public static Usage GetUsage(int phase, int appart, int mois)
-        {
-            return UsageFactory.GetUsage(phase, appart, mois);
         }
     }
 }

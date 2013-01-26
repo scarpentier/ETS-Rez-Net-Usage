@@ -13,13 +13,13 @@ namespace RezNetUsage.Core
         /// <summary>
         /// Regex pour définir l'utilisation
         /// </summary>
-        private readonly static Regex regexUsage =
+        private readonly static Regex RegexUsage =
         new Regex("<TR><TD>(.*)</TD><TD>(.*)</TD><TD ALIGN=\"RIGHT\">(.*)</TD><TD ALIGN=\"RIGHT\">(.*)</TD></TR>");
 
         /// <summary>
         /// Regex pour définir l'utilisation maximale permise
         /// </summary>
-        private static readonly Regex regexMax =
+        private static readonly Regex RegexMax =
             new Regex("<TD>Quota permis pour la p&eacute;riode</TD><TD ALIGN=\"RIGHT\">(.*)</TD></TD></TR>");
 
         /// <summary>
@@ -28,39 +28,26 @@ namespace RezNetUsage.Core
         private static readonly CultureInfo Culture = CultureInfo.CreateSpecificCulture("en-CA");
 
         /// <summary>
-        /// Retourne un objet Dataset Usage pour la phase, appart et mois spécifié
-        /// </summary>
-        /// <param name="phase"></param>
-        /// <param name="appart"></param>
-        /// <param name="mois"></param>
-        /// <returns></returns>
-        public static Usage GetUsage(int phase, int appart, int mois)
-        {
-            var usage = new Usage();
-            return GetUsage(usage, phase, appart, mois);
-        }
-
-        /// <summary>
         /// Ajoute les informations de la consommation internet pour un appart dans un objet Usage donné
         /// </summary>
         /// <param name="usage"></param>
         /// <param name="phase"></param>
         /// <param name="appart"></param>
         /// <param name="mois"></param>
-        /// <returns></returns>
-        public static Usage GetUsage(Usage usage, int phase, int appart, int mois)
+        /// <returns>Objet usage plein de data</returns>
+        public static Usage GetUsage(this Usage usage, int phase, int appart, int mois)
         {
             // Build query string
             // http://ets-res2-772:ets772@www2.cooptel.qc.ca/services/temps/?mois=9&cmd=Visualiser
-            string query = "http://www2.cooptel.qc.ca/services/temps/?mois=" + mois + "&cmd=Visualiser";
-            string user = "ets-res" + phase + "-" + appart;
-            string pass = "ets" + appart;
+            var query = string.Format("http://www2.cooptel.qc.ca/services/temps/?mois={0}&cmd=Visualiser", mois);
+            var user = string.Format("ets-res{0}-{1}", phase, appart);
+            var pass = string.Format("ets{0}", appart);
 
             string html;
             try
             {
                 // Fetch data into a string
-                html = SPACEBAR.Net.DownloadHTML(query, user, pass);
+                html = NetHelper.DownloadHtml(query, user, pass);
             }
             catch (Exception ex)
             {
@@ -68,8 +55,8 @@ namespace RezNetUsage.Core
             }
 
             // Match du regeex
-            MatchCollection mc = regexUsage.Matches(html);
-            usage.Maximum = Math.Round(Double.Parse(regexMax.Matches(html)[0].Groups[1].Value, Culture), 0);
+            MatchCollection mc = RegexUsage.Matches(html);
+            usage.Maximum = Math.Round(Double.Parse(RegexMax.Matches(html)[0].Groups[1].Value, Culture), 0);
 
             // Objets temporaires
             for (var i = 0; i <= mc.Count - 1; i++)

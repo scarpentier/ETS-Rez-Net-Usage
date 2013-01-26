@@ -2,16 +2,16 @@ using System;
 using System.Net;
 using System.Text;
 
-namespace SPACEBAR
+namespace RezNetUsage.Core
 {
-	public class Net
+	public class NetHelper
 	{
-        public static string DownloadHTML(string url)
+        public static string DownloadHtml(string url)
 		{
 			try
 			{
-				WebClient webClient = new WebClient();
-				byte[] myDatabuffer = webClient.DownloadData(url);
+				var webClient = new WebClient();
+				var myDatabuffer = webClient.DownloadData(url);
 				return Encoding.Default.GetString(myDatabuffer);
 			}
 			catch (Exception ex)
@@ -20,18 +20,22 @@ namespace SPACEBAR
 			}
 		}
 
-        public static string DownloadHTML(string url, string username, string password)
+        public static string DownloadHtml(string url, string username, string password)
         {
             try
             {
-                WebClient webClient = new WebClient();
+                var webClient = new WebClient();
 
                 // Credentials management
-                CredentialCache cache = new CredentialCache();
-                cache.Add(new Uri(url), "Basic", new NetworkCredential(username, password));
+                var cache = new CredentialCache {
+                    {
+                        new Uri(url),
+                        "Basic",
+                        new NetworkCredential(username, password)
+                    }};
                 webClient.Credentials = cache;
 
-                byte[] myDatabuffer = webClient.DownloadData(url);
+                var myDatabuffer = webClient.DownloadData(url);
                 return Encoding.Default.GetString(myDatabuffer);
             }
             catch (Exception ex)
@@ -42,20 +46,20 @@ namespace SPACEBAR
 
 		public static void DownloadFile(string url, string fileName)
 		{
-			WebClient webClient = new WebClient();
+			var webClient = new WebClient();
 			webClient.DownloadFile(url, fileName);
 		}
 
         public static bool DoesUrlExists(string url)
         {
-            bool urlExists = false;
+            var urlExists = false;
             try
             {
-                WebRequest req = WebRequest.Create(url);
-                HttpWebResponse response = (HttpWebResponse)req.GetResponse();
+                var req = WebRequest.Create(url);
+                var response = (HttpWebResponse)req.GetResponse();
                 urlExists = true;
             }
-            catch (System.Net.WebException ex)
+            catch (WebException ex)
             {
 
             }
