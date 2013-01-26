@@ -4,3 +4,5 @@ backup
 _ReSharper.RezNetUsage
 _UpgradeReport_Files
 csx
+*.DotSettings
+*.dll
