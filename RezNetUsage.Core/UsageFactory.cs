@@ -67,7 +67,7 @@ namespace RezNetUsage.Core
                 DateTime day;
                 if (mc[i].Groups[2].Value.Contains("en cours"))
                 {
-                    day = DateTime.Today;
+                    day = DateTime.UtcNow.AddHours(-5); // Il faut se synroniser sur le fuseau horaire de Cooptel pour savoir quand la journée change pour eux. J'ai aucune idée si ils prennent en compte DST
                 }
                 else
                 {
