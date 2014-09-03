@@ -37,10 +37,13 @@ namespace RezNetUsage.Core
         /// <returns>Objet usage plein de data</returns>
         public static Usage GetUsage(this Usage usage, int phase, int appart, int mois)
         {
+            // Les numero d'appartement qui ont seulement 3 chiffres est sous le format 0111 et non 111. Who knows why.
+            var appartFormatte = phase == 3 ? appart.ToString("0000") : appart.ToString();
+
             // Build query string
             // http://ets-res2-772:ets772@www2.cooptel.qc.ca/services/temps/?mois=9&cmd=Visualiser
             var query = string.Format("http://www2.cooptel.qc.ca/services/temps/?mois={0}&cmd=Visualiser", mois);
-            var user = string.Format("ets-res{0}-{1}", phase, appart);
+            var user = string.Format("ets-res{0}-{1}", phase, appartFormatte);
             var pass = string.Format("ets{0}", appart);
 
             string html;
