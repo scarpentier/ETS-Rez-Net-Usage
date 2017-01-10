@@ -20,7 +20,7 @@ namespace RezNetUsage.Core
         /// Regex pour définir l'utilisation maximale permise
         /// </summary>
         private static readonly Regex RegexMax =
-            new Regex("<TD>Quota permis pour la p&eacute;riode</TD><TD ALIGN=\"RIGHT\">(.*)</TD></TD></TR>");
+            new Regex(@"<TD>Quota permis pour la p&eacute;riode \(Mo\)</TD><TD ALIGN=\""RIGHT\"">(.*)</TD></TD></TR>");
 
         /// <summary>
         /// Le parsing des doubles de cooptel dépendent de la culture locale
